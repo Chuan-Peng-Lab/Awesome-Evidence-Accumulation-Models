@@ -28,3 +28,8 @@ Broadly speaking, EAM/SSM is a family of models, which can be used to describe t
 ### EAMs in Matlab
 
 ### Standalone software for EAMs
+
+
+## How to contribute
+
+ Fork this repo, make changes, and submit a pull request. We will review the pull request and merge it if it follows our style guide.
