@@ -1,53 +1,30 @@
 # Awesome Evidence Accumulation Models
 
-Drift-diffusion models (DDMs) or Evidence accumulation models (EAMs) are widely used in studying human decision-making, and DDMs are a particular model of sequential sampling model (SSM). DDM is increasingly used in analyzing RT data in psychology, neuroscience, and psychiatry. However, different packages provided different (and usually limited) functions for DDM. The goal of metaDDM is to make the modelling process approaching to standardized. 
+This repo aimed at curating all information related to evidence accumulation models (EAMs) or seqeuntial sampling models (SSMs). Drift-diffusion models (DDMs) and linear balstic accumulator (LBA) are two prominent models in this family. 
 
-This project was generated after seeing the usefullness of the [hddm docker image](https://hub.docker.com/r/hcp4715/hddm), which aimed at increase the computational reprodocubility of analyses based on HDDM. Only after reading a lot papers, I realized the chaotic status of the modelling field. The humble goal of this project is to create a more general tool (That's why I choose HDDM at the very beginning, it's widely used). 
+All people in the field are welcome to contribute to this repo and make is an awesome resource for EAM/SSM. 
 
-There are three sub-goals of metaDDM: (1) provide a hitchhiker's guide to the chaotic world of DDM/EAM/SSM; (2) provide an all-in-one docker image for DDM related python packages, and maybe other packages, such `r` packages, in thie docker image or as a separate image in the future; (3) provide some workflow like recommmendations for using DDM. Thus this repo might be developed into three repos, depends on whether we have enough people in the future.
+## What is EAM/SSM? 
+Broadly speaking, EAM/SSM is a family of models, which can be used to describe the process of evidence accumulation/decay in human decision-making. In the simplest case, it can be described as a one-dimensional random walk, where the probability of going up or down is determined by a drift parameter (Ratcliff et al., 2016). This family of models are widely used in cognitive science, computational psychiatry, neuroscience, behavioral economics, etc.
 
-This project has just started. If you are interested in this project, please feel free to email me and jump in. My email address is: hcp4715 AT hotmail dot com.
+## Software for EAM
 
-## What is DDM? 
-To be continued ...
+### Overview
+<!-- insert a table with four columns: software name, languages, key features, and url-->
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| HDDM | Python | Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | https://hddm.readthedocs.io/en/latest/ |
+| PyDDM | Python | A simulator and modeling framework for generalized drift-diffusion models | https://github.com/mwshinn/PyDDM |
+| PyBEAM | Python | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | https://github.com/murrowma/pybeam |
+| fast-dm-30 | standalone | A fast implementation of DDM | https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/ |
+| EZ-DDM | javascript | A simplified version of DDM | https://www.ejwagenmakers.com/EZ.html; see also [EZ Bayesian hierarchical model](https://link.springer.com/article/10.3758/s13423-025-02729-y)|
 
-## DDM/EAM/SSM in Python
-### Packages for modelling
-#### [HDDM](https://hddm.readthedocs.io/en/latest/)
-HDDM is a python toolbox for hierarchical Bayesian parameter estimation of the Drift Diffusion Model (via PyMC2.3.8).
+### EAMs in Python
 
-#### [pyDDM](https://github.com/mwshinn/PyDDM)
-PyDDM is a simulator and modeling framework for generalized drift-diffusion models (DDM), with a focus on cognitive neuroscience.
+### EAMs in R
 
-#### [PyBEAM](https://github.com/murrowma/pybeam)
-PyBEAM (Bayesian Evidence Accumulation Models) is a Python package designed to rapidly fit two-boundary, binary choice models to choice-RT data using Bayesian inference methods. 
+### EAMs in Julia
 
-### Supporting packages
-A complete workflow for DDM needs packages other than parameter estimation or simulation, but more, e.g., statstical inference, visualization. In this docker image, we included python packages we think are essential for complete workflow:
+### EAMs in Matlab
 
-#### Packages for parallel processing
-`p_tqdm`, which includs `pathos` and `tqdm`.
-
-#### Bayesian inference
-`ArviZ`, `pymc3`, and `bambi`
-
-#### Visualization
-`seaborn` and `plotly`
-
-#### To be continued...
-
-### docker images for DDM in Python.
-Tags will be used to distinct the packages and version of packages in each docker image.
-
-## DDM in R
-
-## DDM in  other languages
-### *EZ*
-
-### fast-dm 
-
-## How to use a docker image
-Please see this [hddm docker image](https://hub.docker.com/r/hcp4715/hddm) about details of using docker image. 
-
-## Report issues
-If you have any problem in using this docker image, please report an issue at the [github repo](https://github.com/hcp4715/hddm_docker/issues) 
+### Standalone software for EAMs
