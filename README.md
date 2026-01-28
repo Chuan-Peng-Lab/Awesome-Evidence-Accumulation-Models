@@ -1,4 +1,5 @@
-# metaDDM: Building a docker image for drift diffusion modelling
+# Awesome Evidence Accumulation Models
+
 Drift-diffusion models (DDMs) or Evidence accumulation models (EAMs) are widely used in studying human decision-making, and DDMs are a particular model of sequential sampling model (SSM). DDM is increasingly used in analyzing RT data in psychology, neuroscience, and psychiatry. However, different packages provided different (and usually limited) functions for DDM. The goal of metaDDM is to make the modelling process approaching to standardized. 
 
 This project was generated after seeing the usefullness of the [hddm docker image](https://hub.docker.com/r/hcp4715/hddm), which aimed at increase the computational reprodocubility of analyses based on HDDM. Only after reading a lot papers, I realized the chaotic status of the modelling field. The humble goal of this project is to create a more general tool (That's why I choose HDDM at the very beginning, it's widely used). 

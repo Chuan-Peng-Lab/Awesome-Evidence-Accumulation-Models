@@ -2,3 +2,15 @@
 *vscode/
 *cache*/
 */examples/*chain*
+
+# virtual environment
+__pycache__/
+
+# macOS files
+.DS_Store
+._*
+
+# Folders
+DDM/
+HDDM_only/
+HDDM08/
