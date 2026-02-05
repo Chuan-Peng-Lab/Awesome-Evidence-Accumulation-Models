@@ -29,6 +29,21 @@ Broadly speaking, EAM/SSM is a family of models, which can be used to describe t
 
 ### Standalone software for EAMs
 
+## EAM in neuroscience
+
+### Human studies using EEG
+
+- Kelly, S. P., & O’Connell, R. G. (2013). Internal and External Influences on the Rate of Sensory Evidence Accumulation in the Human Brain. Journal of Neuroscience, 33(50), 19434–19441. https://doi.org/10.1523/JNEUROSCI.3355-13.2013
+- O’Connell, R. G., Dockree, P. M., & Kelly, S. P. (2012). A supramodal accumulation-to-bound signal that determines perceptual decisions in humans. Nature Neuroscience, 15(12), 1729–1735. https://doi.org/10.1038/nn.3248
+- Twomey, D. M., Murphy, P. R., Kelly, S. P., & O’Connell, R. G. (2015). The classic P300 encodes a build-to-threshold decision variable. European Journal of Neuroscience, 42(1), 1636–1643. https://doi.org/10.1111/ejn.12936 
+- O’Connell, R. G., & Kelly, S. P. (2021). Neurophysiology of Human Perceptual Decision-Making. Annual Review of Neuroscience, 44, 495–516. https://doi.org/10.1146/annurev-neuro-092019-100200
+
+### Human studies using fMRI
+
+### Human studies using iEEG
+- Pereira, M., Megevand, P., Tan, M. X., Chang, W., Wang, S., Rezai, A., … Faivre, N. (2021). Evidence accumulation relates to perceptual consciousness and monitoring. Nature Communications, 12(1), 3261. https://doi.org/10.1038/s41467-021-23540-y
+
+
 
 ## Important references
 
