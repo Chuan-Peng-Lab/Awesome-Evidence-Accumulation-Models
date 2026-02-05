@@ -14,30 +14,30 @@ Broadly speaking, EAM/SSM is a family of models, which can be used to describe t
 There has been a lot of work in this area, and many software have been developed. Here is a list of software that are currently available. 
 
 ### EAMs in Python
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| HDDM | Python | Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/) |
-| PyDDM | Python | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM) |
-| PyBEAM | Python | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam) |
+| Software name | Key features | URL |
+| --- | --- | --- |
+| HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/) |
+| PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM) |
+| PyBEAM | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam) |
 
 ### EAMs in R
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| rdist | R | A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
-| `wiener_full_lpdf()` | r | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
-| RWiener | R | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
+| Software name | Key features | URL |
+| --- |  --- | --- |
+| rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
+| `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
+| RWiener | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
 
 ### EAMs in Julia
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| SequentialSamplingModels.jl  | Julia | A unified interface for simulating and evaluating sequential sampling models | [link](https://juliapackages.com/p/sequentialsamplingmodels) |
+| Software name  | Key features | URL |
+| --- | --- | --- |
+| SequentialSamplingModels.jl | A unified interface for simulating and evaluating sequential sampling models | [link](https://juliapackages.com/p/sequentialsamplingmodels) |
 
 
 ### EAMs in Matlab
 
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| DMAT | Matlab | A Matlab interface for DDM | [link](https://ppw.kuleuven.be/okp/software/dmat/) |
+| Software name |  Key features | URL |
+| --- | ---  | --- |
+| DMAT | A Matlab interface for DDM | [link](https://ppw.kuleuven.be/okp/software/dmat/) |
 
 ### Standalone software for EAMs
 | Software name | Languages | Key features | URL |
