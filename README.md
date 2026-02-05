@@ -11,43 +11,59 @@ Broadly speaking, EAM/SSM is a family of models, which can be used to describe t
 
 ### Overview
 <!-- insert a table with four columns: software name, languages, key features, and url-->
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| HDDM | Python | Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | https://hddm.readthedocs.io/en/latest/ |
-| PyDDM | Python | A simulator and modeling framework for generalized drift-diffusion models | https://github.com/mwshinn/PyDDM |
-| PyBEAM | Python | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | https://github.com/murrowma/pybeam |
-| fast-dm-30 | standalone | A fast implementation of DDM | https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/ |
-| EZ-DDM | javascript | A simplified version of DDM | https://www.ejwagenmakers.com/EZ.html; see also [EZ Bayesian hierarchical model](https://link.springer.com/article/10.3758/s13423-025-02729-y)|
+There has been a lot of work in this area, and many software have been developed. Here is a list of software that are currently available. 
 
 ### EAMs in Python
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| HDDM | Python | Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/) |
+| PyDDM | Python | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM) |
+| PyBEAM | Python | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam) |
 
 ### EAMs in R
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| rdist | R | A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
+| `wiener_full_lpdf()` | r | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
+| RWiener | R | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
 
 ### EAMs in Julia
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| SequentialSamplingModels.jl  | Julia | A unified interface for simulating and evaluating sequential sampling models | [link](https://juliapackages.com/p/sequentialsamplingmodels) |
+
 
 ### EAMs in Matlab
 
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| DMAT | Matlab | A Matlab interface for DDM | [link](https://ppw.kuleuven.be/okp/software/dmat/) |
+
 ### Standalone software for EAMs
+| Software name | Languages | Key features | URL |
+| --- | --- | --- | --- |
+| fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/) |
+| EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); see also [EZ Bayesian hierarchical model](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
 
 ## EAM in neuroscience
 
 ### Human studies using EEG
 
-- Kelly, S. P., & O’Connell, R. G. (2013). Internal and External Influences on the Rate of Sensory Evidence Accumulation in the Human Brain. Journal of Neuroscience, 33(50), 19434–19441. https://doi.org/10.1523/JNEUROSCI.3355-13.2013
-- O’Connell, R. G., Dockree, P. M., & Kelly, S. P. (2012). A supramodal accumulation-to-bound signal that determines perceptual decisions in humans. Nature Neuroscience, 15(12), 1729–1735. https://doi.org/10.1038/nn.3248
-- Twomey, D. M., Murphy, P. R., Kelly, S. P., & O’Connell, R. G. (2015). The classic P300 encodes a build-to-threshold decision variable. European Journal of Neuroscience, 42(1), 1636–1643. https://doi.org/10.1111/ejn.12936 
-- O’Connell, R. G., & Kelly, S. P. (2021). Neurophysiology of Human Perceptual Decision-Making. Annual Review of Neuroscience, 44, 495–516. https://doi.org/10.1146/annurev-neuro-092019-100200
+- Kelly, S. P., & O’Connell, R. G. (2013). Internal and External Influences on the Rate of Sensory Evidence Accumulation in the Human Brain. *Journal of Neuroscience*, 33(50), 19434–19441. https://doi.org/10.1523/JNEUROSCI.3355-13.2013
+- O’Connell, R. G., Dockree, P. M., & Kelly, S. P. (2012). A supramodal accumulation-to-bound signal that determines perceptual decisions in humans. *Nature Neuroscience*, 15(12), 1729–1735. https://doi.org/10.1038/nn.3248
+- Twomey, D. M., Murphy, P. R., Kelly, S. P., & O’Connell, R. G. (2015). The classic P300 encodes a build-to-threshold decision variable. *European Journal of Neuroscience*, 42(1), 1636–1643. https://doi.org/10.1111/ejn.12936 
+- O’Connell, R. G., & Kelly, S. P. (2021). Neurophysiology of Human Perceptual Decision-Making. *Annual Review of Neuroscience*, 44, 495–516. https://doi.org/10.1146/annurev-neuro-092019-100200
 
 ### Human studies using fMRI
 
 ### Human studies using iEEG
-- Pereira, M., Megevand, P., Tan, M. X., Chang, W., Wang, S., Rezai, A., … Faivre, N. (2021). Evidence accumulation relates to perceptual consciousness and monitoring. Nature Communications, 12(1), 3261. https://doi.org/10.1038/s41467-021-23540-y
+- Pereira, M., Megevand, P., Tan, M. X., Chang, W., Wang, S., Rezai, A., … Faivre, N. (2021). Evidence accumulation relates to perceptual consciousness and monitoring. *Nature Communications*, 12(1), 3261. https://doi.org/10.1038/s41467-021-23540-y
 
 
 
 ## Important references
 
-- Ratcliff, R., Smith, P. L., Brown, S. D., & McKoon, G. (2016). Diffusion Decision Model: Current Issues and History. Trends in Cognitive Sciences, 20(4), 260–281. https://doi.org/10.1016/j.tics.2016.01.007 \[Note: This paper is a good introduction to the DDM, its history and its variants. \]
+- Ratcliff, R., Smith, P. L., Brown, S. D., & McKoon, G. (2016). Diffusion Decision Model: Current Issues and History. *Trends in Cognitive Sciences*, 20(4), 260–281. https://doi.org/10.1016/j.tics.2016.01.007 \[Note: This paper is a good introduction to the DDM, its history and its variants. \]
 
 - Forstmann, B. U., Ratcliff, R., & Wagenmakers, E.-J. (2016). Sequential Sampling Models in Cognitive Neuroscience: Advantages, Applications, and Extensions. Annual Review of Psychology, 67(1), 641–666. https://doi.org/10.1146/annurev-psych-122414-033645 \[Note: This paper focus more on how SSM help to connect behavioral and neural data. \]
 
