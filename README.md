@@ -17,6 +17,7 @@ There has been a lot of work in this area, and many software have been developed
 | Software name | Key features | URL |
 | --- | --- | --- |
 | HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/) |
+| HSSM | An upgraded version of HDDM, include more EAMs | [link](https://lnccbrown.github.io/HSSM/); [paper](https://doi.org/10.1016/j.jml.2022.102397) |
 | PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM) |
 | PyBEAM | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 
