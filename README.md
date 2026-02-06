@@ -24,8 +24,9 @@ There has been a lot of work in this area, and many software have been developed
 | Software name | Key features | URL |
 | --- |  --- | --- |
 | rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
-| `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
 | RWiener | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
+| `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
+| dynConfiR | A R package for sequential sampling models of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
 
 ### EAMs in Julia
 | Software name  | Key features | URL |
