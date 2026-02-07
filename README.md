@@ -16,10 +16,13 @@ There has been a lot of work in this area, and many software have been developed
 ### EAMs in Python
 | Software name | Key features | URL |
 | --- | --- | --- |
-| HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/); [tutorial in dockerHDDM](https://doi.org/10.1177/25152459241298700)|
+| HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/); [paper](https://www.frontiersin.org/articles/10.3389/fninf.2013.00014/full)|
+| dockerHDDM | A docker image for HDDM| [paper & tutorial](https://doi.org/10.1177/25152459241298700)|
 | HSSM | An upgraded version of HDDM, include more EAMs | [link](https://lnccbrown.github.io/HSSM/) |
-| PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM) |
+| PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM); [paper](https://doi.org/10.7554/eLife.56938)|
 | PyBEAM | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
+| FlexDDM | A flexible decision-diffusion Python package | [paper](https://escholarship.org/uc/item/4q57r2x0)|
+| EZ-CDM | A python module for circular diffusion model| [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7)|
 
 ### EAMs in R
 | Software name | Key features | URL |
@@ -27,6 +30,7 @@ There has been a lot of work in this area, and many software have been developed
 | EMC2 | An R package for Bayesian hierarchical cognitive modeling | [link](https://github.com/ampl-psych/EMC2); [paper](https://doi.org/10.3758/s13428-025-02869-y) |
 | rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
 | RWiener | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
+| DMCfun | An R package for fitting Diffusion Model of Conflict (DMC)  | [link](https://github.com/psyarxiv/DMCfun); [paper](https://www.sciencedirect.com/science/article/pii/S259026012100031X) |
 | flankr |An R package for Flanker task | [link](https://github.com/JimGrange/flankr); [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
 | dynConfiR | A R package for sequential sampling models of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
 | `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
@@ -45,8 +49,26 @@ There has been a lot of work in this area, and many software have been developed
 ### Standalone software for EAMs
 | Software name | Languages | Key features | URL |
 | --- | --- | --- | --- |
-| fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/) |
-| EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); see also [EZ Bayesian hierarchical model](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
+| fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/); [tutorial](https://doi.org/10.3389/fpsyg.2015.00336
+)|
+| EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); [paper](https://doi.org/10.3758/PBR.15.6.1229) | 
+| EZ-Bayeisan | JASP module|[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
+
+## Tutorials & guidelines
+### General tutorials for computational modeling:
+- Bodner, K., Brimacombe, C., Chenery, E. S., Greiner, A., McLeod, A. M., Penk, S. R., & Soto, J. S. V. (2021). Ten simple rules for tackling your first mathematical models: A guide for graduate students by graduate students. *PLOS Computational Biology*, 17(1), e1008539. https://doi.org/10.1371/journal.pcbi.1008539
+- 
+
+### Tutorial for EAMs
+- Boag, R. J., Innes, R. J., Stevenson, N., Bahg, G., Busemeyer, J. R., Cox, G. E., … Forstmann, B. U. (2025). An Expert Guide to Planning Experimental Tasks For Evidence-Accumulation Modeling. *Advances in Methods and Practices in Psychological Science*, 8(2), 25152459251336127. https://doi.org/10.1177/25152459251336127
+- Pan, W., Geng, H., Zhang, L., Fengler, A., Frank, M. J., Zhang, R.-Y., & Chuan-Peng, H. (2025). dockerHDDM: A User-Friendly Environment for Bayesian Hierarchical Drift-Diffusion Modeling. *Advances in Methods and Practices in Psychological Science*, 8(1), 25152459241298700. https://doi.org/10.1177/25152459241298700
+- Nunez, M. D., Fernandez, K., Srinivasan, R., & Vandekerckhove, J. (2024). A tutorial on fitting joint models of M/EEG and behavior to understand cognition. Behavior Research Methods. https://doi.org/10.3758/s13428-023-02331-x
+- Myers, C. E., Interian, A., & Moustafa, A. A. (2022). A practical introduction to using the drift diffusion model of decision-making in cognitive psychology, neuroscience, and health sciences. *Frontiers in Psychology*, 13. https://doi.org/10.3389/fpsyg.2022.1039172
+- Fengler, A., Bera, K., Pedersen, M. L., & Frank, M. J. (2022). Beyond Drift Diffusion Models: Fitting a Broad Class of Decision and Reinforcement Learning Models with HDDM. *Journal of Cognitive Neuroscience*, 34(10), 1780–1805. https://doi.org/10.1162/jocn_a_01902
+- Johnson, D. J., Hopwood, C. J., Cesario, J., & Pleskac, T. J. (2017). Advancing Research on Cognitive Processes in Social and Personality Psychology: A Hierarchical Drift Diffusion Model Primer. *Social Psychological and Personality Science*, 8(4), 413–423. https://doi.org/10.1177/1948550617703174
+- Voss, A., Voss, J., & Lerche, V. (2015). Assessing cognitive processes with diffusion model analyses: A tutorial based on fast-dm-30. *Frontiers in Psychology*, 6. https://doi.org/10.3389/fpsyg.2015.00336
+- Voss, A., Nagler, M., & Lerche, V. (2013). Diffusion models in experimental psychology: A practical introduction. *Experimental Psychology*, 60(6), 385–402. https://doi.org/10.1027/1618-3169/a000218
+
 
 ## EAM in neuroscience
 
@@ -67,11 +89,11 @@ There has been a lot of work in this area, and many software have been developed
 
 - Ratcliff, R., Smith, P. L., Brown, S. D., & McKoon, G. (2016). Diffusion Decision Model: Current Issues and History. *Trends in Cognitive Sciences*, 20(4), 260–281. https://doi.org/10.1016/j.tics.2016.01.007 \[Note: This paper is a good introduction to the DDM, its history and its variants. \]
 
-- Forstmann, B. U., Ratcliff, R., & Wagenmakers, E.-J. (2016). Sequential Sampling Models in Cognitive Neuroscience: Advantages, Applications, and Extensions. Annual Review of Psychology, 67(1), 641–666. https://doi.org/10.1146/annurev-psych-122414-033645 \[Note: This paper focus more on how SSM help to connect behavioral and neural data. \]
+- Forstmann, B. U., Ratcliff, R., & Wagenmakers, E.-J. (2016). Sequential Sampling Models in Cognitive Neuroscience: Advantages, Applications, and Extensions. *Annual Review of Psychology*, 67(1), 641–666. https://doi.org/10.1146/annurev-psych-122414-033645 \[Note: This paper focus more on how SSM help to connect behavioral and neural data. \]
 
-- Ratcliff, R., & McKoon, G. (2008). The Diffusion Decision Model: Theory and Data for Two-Choice Decision Tasks. Neural Computation, 20(4), 873–922. https://doi.org/10.1162/neco.2008.12-06-420 \[Note: An in-depth introduction to DDM and its paramenters \]
+- Ratcliff, R., & McKoon, G. (2008). The Diffusion Decision Model: Theory and Data for Two-Choice Decision Tasks. *Neural Computation*, 20(4), 873–922. https://doi.org/10.1162/neco.2008.12-06-420 \[Note: An in-depth introduction to DDM and its paramenters \]
 
-- Ratcliff, R. (1978). A theory of memory retrieval. Psychological Review, 85(2), 59–108. https://doi.org/10.1037/0033-295X.85.2.59 \[Note: The first paper introducing DDM. \]
+- Ratcliff, R. (1978). A theory of memory retrieval. *Psychological Review*, 85(2), 59–108. https://doi.org/10.1037/0033-295X.85.2.59 \[Note: The first paper introducing DDM. \]
 
 ## Books and book sections
 - Smith, P. L., & Ratcliff, R. (2025). Diffusion Process Models of Decision Making: Fundamental Processes (Vol. 1). Cambridge: Cambridge University Press. [URL](https://doi.org/10.1017/9781009652667)
