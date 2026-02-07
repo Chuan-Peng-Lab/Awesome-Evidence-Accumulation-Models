@@ -17,19 +17,19 @@ There has been a lot of work in this area, and many software have been developed
 | Software name | Key features | URL |
 | --- | --- | --- |
 | HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/); [paper](https://www.frontiersin.org/articles/10.3389/fninf.2013.00014/full)|
-| dockerHDDM | A docker image for HDDM| [paper & tutorial](https://doi.org/10.1177/25152459241298700)|
+| dockerHDDM | A docker image for HDDM| [link](https://hub.docker.com/r/hcp4715/hddm);[tutorial](https://doi.org/10.1177/25152459241298700)|
 | HSSM | An upgraded version of HDDM, include more EAMs | [link](https://lnccbrown.github.io/HSSM/) |
 | PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM); [paper](https://doi.org/10.7554/eLife.56938)|
 | PyBEAM | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 | FlexDDM | A flexible decision-diffusion Python package | [paper](https://escholarship.org/uc/item/4q57r2x0)|
-| EZ-CDM | A python module for circular diffusion model| [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7)|
+| EZ-CDM | A python script for circular diffusion model| [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7)|
 
 ### EAMs in R
 | Software name | Key features | URL |
 | --- |  --- | --- |
-| EMC2 | An R package for Bayesian hierarchical cognitive modeling | [link](https://github.com/ampl-psych/EMC2); [paper](https://doi.org/10.3758/s13428-025-02869-y) |
 | rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
 | RWiener | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
+| EMC2 | An R package for Bayesian hierarchical cognitive modeling | [link](https://github.com/ampl-psych/EMC2); [paper](https://doi.org/10.3758/s13428-025-02869-y) |
 | DMCfun | An R package for fitting Diffusion Model of Conflict (DMC)  | [link](https://github.com/psyarxiv/DMCfun); [paper](https://www.sciencedirect.com/science/article/pii/S259026012100031X) |
 | flankr |An R package for Flanker task | [link](https://github.com/JimGrange/flankr); [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
 | dynConfiR | A R package for sequential sampling models of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
