@@ -51,7 +51,7 @@ There has been a lot of work in this area, and many software have been developed
 | --- | --- | --- | --- |
 | fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/); [tutorial](https://doi.org/10.3389/fpsyg.2015.00336)|
 | EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); [paper](https://doi.org/10.3758/PBR.15.6.1229) | 
-| EZ-Bayeisan | multiple|[python](https://github.com/joachimvandekerckhove/ezbhddm);[R](https://github.com/Adrifelcha/EZ-project);[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
+| EZ-Bayeisan | multiple| EZ Bayesian hierarchical DDM|[python](https://github.com/joachimvandekerckhove/ezbhddm);[R](https://github.com/Adrifelcha/EZ-project);[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
 
 ## Tutorials & guidelines
 ### General tutorials for computational modeling:
