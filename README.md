@@ -20,7 +20,7 @@ There has been a lot of work in this area, and many software have been developed
 | dockerHDDM | A docker image for HDDM| [link](https://hub.docker.com/r/hcp4715/hddm);[tutorial](https://doi.org/10.1177/25152459241298700)|
 | HSSM | An upgraded version of HDDM, include more EAMs | [link](https://lnccbrown.github.io/HSSM/) |
 | PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM); [paper](https://doi.org/10.7554/eLife.56938)|
-| PyBEAM | A Python package for fitting two-boundary, binary choice models to choice-RT data using Bayesian inference methods | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
+| PyBEAM | A Bayesian Python package for binary choice data | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 | FlexDDM | A flexible decision-diffusion Python package | [paper](https://escholarship.org/uc/item/4q57r2x0)|
 | EZ-CDM | A python script for circular diffusion model| [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7)|
 
@@ -28,17 +28,17 @@ There has been a lot of work in this area, and many software have been developed
 | Software name | Key features | URL |
 | --- |  --- | --- |
 | rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
-| RWiener | A R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
+| RWiener | An R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
 | EMC2 | An R package for Bayesian hierarchical cognitive modeling | [link](https://github.com/ampl-psych/EMC2); [paper](https://doi.org/10.3758/s13428-025-02869-y) |
 | DMCfun | An R package for fitting Diffusion Model of Conflict (DMC)  | [link](https://github.com/psyarxiv/DMCfun); [paper](https://www.sciencedirect.com/science/article/pii/S259026012100031X) |
-| flankr |An R package for Flanker task | [link](https://github.com/JimGrange/flankr); [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
-| dynConfiR | A R package for sequential sampling models of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
+| flankr |An R package for Flanker task (SSP/DSTP) | [link](https://github.com/JimGrange/flankr); [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
+| dynConfiR | An R package for SSM of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
 | `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
 
 ### EAMs in Julia
 | Software name  | Key features | URL |
 | --- | --- | --- |
-| SequentialSamplingModels.jl | A unified interface for simulating and evaluating sequential sampling models | [link](https://juliapackages.com/p/sequentialsamplingmodels) |
+| `SequentialSamplingModels.jl` | A unified interface for SSM| [link](https://juliapackages.com/p/sequentialsamplingmodels) |
 
 ### EAMs in Matlab
 
@@ -52,14 +52,14 @@ There has been a lot of work in this area, and many software have been developed
 | fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/); [tutorial](https://doi.org/10.3389/fpsyg.2015.00336
 )|
 | EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); [paper](https://doi.org/10.3758/PBR.15.6.1229) | 
-| EZ-Bayeisan | JASP module|[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
+| EZ-Bayeisan | multiple|[python](https://github.com/joachimvandekerckhove/ezbhddm);[R](https://github.com/Adrifelcha/EZ-project);[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
 
 ## Tutorials & guidelines
 ### General tutorials for computational modeling:
 - Bodner, K., Brimacombe, C., Chenery, E. S., Greiner, A., McLeod, A. M., Penk, S. R., & Soto, J. S. V. (2021). Ten simple rules for tackling your first mathematical models: A guide for graduate students by graduate students. *PLOS Computational Biology*, 17(1), e1008539. https://doi.org/10.1371/journal.pcbi.1008539
-- 
+- Wilson, R. C., & Collins, A. G. (2019). Ten simple rules for the computational modeling of behavioral data. *eLife*, 8, e49547. https://doi.org/10.7554/eLife.49547
 
-### Tutorial for EAMs
+### Tutorials for EAMs
 - Boag, R. J., Innes, R. J., Stevenson, N., Bahg, G., Busemeyer, J. R., Cox, G. E., … Forstmann, B. U. (2025). An Expert Guide to Planning Experimental Tasks For Evidence-Accumulation Modeling. *Advances in Methods and Practices in Psychological Science*, 8(2), 25152459251336127. https://doi.org/10.1177/25152459251336127
 - Pan, W., Geng, H., Zhang, L., Fengler, A., Frank, M. J., Zhang, R.-Y., & Chuan-Peng, H. (2025). dockerHDDM: A User-Friendly Environment for Bayesian Hierarchical Drift-Diffusion Modeling. *Advances in Methods and Practices in Psychological Science*, 8(1), 25152459241298700. https://doi.org/10.1177/25152459241298700
 - Nunez, M. D., Fernandez, K., Srinivasan, R., & Vandekerckhove, J. (2024). A tutorial on fitting joint models of M/EEG and behavior to understand cognition. Behavior Research Methods. https://doi.org/10.3758/s13428-023-02331-x
