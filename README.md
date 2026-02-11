@@ -196,12 +196,12 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 ## Best Practices & Guidelines
 
-### 📊 Data Requirements
+<!--### 📊 Data Requirements
 
 #### **Minimum Sample Sizes**
-- **Individual fitting**: ≥ 100 trials per condition
-- **Hierarchical fitting**: ≥ 20-30 participants, each with ≥ 50-100 trials
-- **Complex models**: Increase trials proportionally to parameters
+- **Individual fitting**: ≥ 100 trials per condition (citation needed)
+- **Hierarchical fitting**: ≥ 20-30 participants, each with ≥ 50-100 trials (citation needed)
+- **Complex models**: Increase trials proportionally to parameters (citation needed)
 
 #### **Data Quality Checks**
 - Remove outliers (> 3 SD from mean RT, excluding < 200ms responses)
@@ -223,7 +223,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 - **Information Criteria**: Use WAIC, LOO-CV for Bayesian models
 - **Cross-validation**: K-fold validation for predictive accuracy
 - **Posterior Predictive Checks**: Essential for model validation
-- **Parameter Recovery**: Test with simulated data before real analysis
+- **Parameter Recovery**: Test with simulated data before real analysis -->
 
 ### ⚠️ Common Pitfalls & Solutions
 
@@ -278,9 +278,9 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **2016** | [Ratcliff et al. (2016)](https://doi.org/10.1016/j.tics.2016.01.007) | Current issues and historical overview |
 | **2016** | [Forstmann et al. (2016)](https://doi.org/10.1146/annurev-psych-122414-033645) | SSM in cognitive neuroscience |
 
-### Recent Advances (2024-2025)
+<!--- ### Recent Advances (2024-2025)
 
-- **[Khoudary et al. (2025)](https://doi.org/10.1111/ejn.70098)**: Philosophical foundations of computational modeling
+**[Khoudary et al. (2025)](https://doi.org/10.1111/ejn.70098)**: Philosophical foundations of computational modeling
 - **[Nunez et al. (2025)](https://doi.org/10.1016/j.jmp.2025.102720)**: Cognitive models with identifiable parameters
 - **[Fernandez et al. (2024)](https://arxiv.org/abs/2411.06631)**: Julia ecosystem for sequential sampling models
 
@@ -288,7 +288,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 - **[Vloeberghs et al. (2025)](https://doi.org/10.1371/journal.pcbi.1013291)**: Trial-to-trial fluctuations modeling
 - **[Jin et al. (2025)](https://arxiv.org/abs/2507.01177)**: Unified Bayesian regression with DDM
-- **[Kvam (2024)](https://doi.org/10.3758/s13423-024-02587-0)**: Model discrimination techniques
+- **[Kvam (2024)](https://doi.org/10.3758/s13423-024-02587-0)**: Model discrimination techniques -->
 
 
 ## 🤝 Contributing
