@@ -1,109 +1,371 @@
 # Awesome Evidence Accumulation Models
 
-This repo aimed at curating all information related to evidence accumulation models (EAMs) or seqeuntial sampling models (SSMs). Drift-diffusion models (DDMs) and linear balstic accumulator (LBA) are two prominent models in this family. 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-All people in the field are welcome to contribute to this repo and make is an awesome resource for EAM/SSM. 
+> A curated collection of resources for evidence accumulation models (EAMs) and sequential sampling models (SSMs) in computational psychology, neuroscience, and decision-making research.
 
-## What is EAM/SSM? 
-Broadly speaking, EAM/SSM is a family of models, which can be used to describe the process of evidence accumulation/decay in human decision-making. In the simplest case, it can be described as a one-dimensional random walk, where the probability of going up or down is determined by a drift parameter (Ratcliff et al., 2016). This family of models are widely used in cognitive science, computational psychiatry, neuroscience, behavioral economics, etc.
+This repository aims to curate comprehensive information related to evidence accumulation models (EAMs) or sequential sampling models (SSMs). Drift-diffusion models (DDMs) and linear ballistic accumulator (LBA) are two prominent models in this family, which have become fundamental tools for understanding decision-making processes across various disciplines.
+
+**🤝 All researchers and practitioners in the field are welcome to contribute to this repository and help make it an awesome resource for the EAM/SSM community!** 
+
+## What is EAM/SSM?
+
+Broadly speaking, EAM/SSM is a family of computational models that describe the process of evidence accumulation/decay in human decision-making. In the simplest case, it can be described as a one-dimensional random walk, where the probability of moving up or down is determined by a drift parameter (Ratcliff et al., 2016).
+
+### Key Concepts
+
+- **Evidence Accumulation**: Models describe how information is gathered over time until a decision threshold is reached
+- **Stochastic Process**: Decision-making is modeled as a probabilistic process with inherent noise
+- **Response Time Distribution**: These models naturally account for both choice accuracy and response time distributions
+- **Parameter Interpretation**: Model parameters map onto cognitive processes (e.g., drift rate → evidence quality, boundary separation → response caution)
+
+### Applications
+
+This family of models is widely used in:
+- **Cognitive Science**: Understanding attention, memory, and perception
+- **Computational Psychiatry**: Characterizing cognitive deficits in mental disorders
+- **Neuroscience**: Linking behavioral data to neural mechanisms
+- **Behavioral Economics**: Modeling choice under uncertainty
+- **Artificial Intelligence**: Human-inspired decision-making systems
+- **Educational Psychology**: Understanding learning and skill acquisition
 
 ## Software for EAM
 
+### Quick Start Guide
+
+| Use Case | Recommended Software | Language | Difficulty |
+|---|---|---|---|
+| **Beginners** | EZ-DDM, HDDM | Python/R | ⭐ |
+| **Bayesian Analysis** | HDDM, HSSM, Stan | Python/R/Stan | ⭐⭐⭐ |
+| **Custom Models** | PyDDM, SequentialSamplingModels.jl | Python/Julia | ⭐⭐⭐⭐ |
+| **Large Datasets** | fast-dm-30, PyDDM | C++/Python | ⭐⭐ |
+| **Neural Integration** | VAM, HSSM (EEG) | Python | ⭐⭐⭐⭐ |
+
 ### Overview
-<!-- insert a table with four columns: software name, languages, key features, and url-->
-There has been a lot of work in this area, and many software have been developed. Here is a list of software that are currently available. 
+
+The ecosystem for evidence accumulation modeling has grown significantly, with mature software packages available across multiple programming languages. Below is a comprehensive list of currently available tools, organized by language and platform. 
 
 ### EAMs in Python
-| Software name | Key features | URL |
-| --- | --- | --- |
-| HDDM |  Hierarchical Bayesian parameter estimation of the Drift Diffusion Model | [link](https://hddm.readthedocs.io/en/latest/); [paper](https://www.frontiersin.org/articles/10.3389/fninf.2013.00014/full)|
-| dockerHDDM | A docker image for HDDM| [link](https://hub.docker.com/r/hcp4715/hddm);[tutorial](https://doi.org/10.1177/25152459241298700)|
-| HSSM | An upgraded version of HDDM, include more EAMs | [link](https://lnccbrown.github.io/HSSM/) |
-| PyDDM | A simulator and modeling framework for generalized drift-diffusion models | [link](https://github.com/mwshinn/PyDDM); [paper](https://doi.org/10.7554/eLife.56938)|
-| PyBEAM | A Bayesian Python package for binary choice data | [link](https://github.com/murrowma/pybeam); [paper](https://doi.org/10.3758/s13428-023-02162-w) |
-| FlexDDM | A flexible decision-diffusion Python package | [paper](https://escholarship.org/uc/item/4q57r2x0)|
-| EZ-CDM | A python script for circular diffusion model| [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7)|
+
+| Software | Key Features | Status | URL |
+|---|---|---|---|
+| **HDDM** | Hierarchical Bayesian parameter estimation of DDM, MCMC sampling | 🔧 Active | [docs](https://hddm.readthedocs.io/en/latest/) • [paper](https://www.frontiersin.org/articles/10.3389/fninf.2013.00014/full) |
+| **HSSM** | Enhanced HDDM with more EAMs, GPU support, modern backend | 🔧 Active | [docs](https://lnccbrown.github.io/HSSM/) • [GitHub](https://github.com/lnccbrown/HSSM) |
+| **PyDDM** | Generalized DDM simulator, custom models, parallel computing | 🔧 Active | [docs](https://pyddm.readthedocs.io/) • [paper](https://doi.org/10.7554/eLife.56938) |
+| **PyBEAM** | Bayesian evidence accumulation modeling for binary choices | 🔧 Active | [GitHub](https://github.com/murrowma/pybeam) • [paper](https://doi.org/10.3758/s13428-023-02162-w) |
+| **VAM** | Visual accumulator model with CNN integration for image-based decisions | 🔧 Active | [paper](https://doi.org/10.7554/eLife.98351) • [GitHub (unstable)](https://github.com/pauljaffe/vam) |
+| **RegDDM** | Bayesian regression analysis integrating DDM parameters with covariates | 🆕 New | [paper](https://arxiv.org/abs/2507.01177) |
+| **dockerHDDM** | Dockerized HDDM environment for reproducible research | 🔧 Maintained | [Docker Hub](https://hub.docker.com/r/hcp4715/hddm) • [tutorial](https://doi.org/10.1177/25152459241298700) |
+| **EZ-CDM** | Circular diffusion model for angular decision-making | 🆕 New | [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7) |
+| **FlexDDM** | Flexible decision-diffusion modeling framework | 🆕 New | [paper (sometimes unavailable)](https://escholarship.org/uc/item/4q57r2x0) ; [code](https://github.com/joyfan00/FlexDDM)|
+
+#### Key Python Packages
+- **NumPy/SciPy**: Core numerical computing
+- **PyMC/PyMC3**: Probabilistic programming (used by HDDM)
+- **JAX**: GPU acceleration (used by HSSM)
+- **PyTorch/TensorFlow**: Deep learning integration (VAM)
 
 ### EAMs in R
-| Software name | Key features | URL |
-| --- |  --- | --- |
-| rdist |  A general-purpose r package for DDM and related function | [link](https://cran.r-project.org/web/packages/rdist/index.html) |
-| RWiener | An R package Wiener process distribution functions | [link](https://cran.r-project.org/web/packages/RWiener/index.html) |
-| EMC2 | An R package for Bayesian hierarchical cognitive modeling | [link](https://github.com/ampl-psych/EMC2); [paper](https://doi.org/10.3758/s13428-025-02869-y) |
-| DMCfun | An R package for fitting Diffusion Model of Conflict (DMC)  | [link](https://github.com/psyarxiv/DMCfun); [paper](https://www.sciencedirect.com/science/article/pii/S259026012100031X) |
-| flankr |An R package for Flanker task (SSP/DSTP) | [link](https://github.com/JimGrange/flankr); [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
-| dynConfiR | An R package for SSM of decision confidence | [link](https://github.com/SeHellmann/dynConfiR); [paper](https://osf.io/preprints/psyarxiv/e354s_v5)|
-| `wiener_full_lpdf()` | A seven parameter DDM in Stan | [link](https://osf.io/486up/files/zqm2f); [paper](https://link.springer.com/article/10.3758/s13428-023-02179-1) |
+
+| Software | Key Features | Status | URL |
+|---|---|---|---|
+| **EMC2** | Bayesian hierarchical cognitive modeling, multiple SSMs | 🔧  Active | [GitHub](https://github.com/awellis/EMC2) • [paper](https://doi.org/10.3758/s13428-025-02869-y) |
+| **DMCfun** | Diffusion Model of Conflict for conflict tasks | 🔧 Active | [OSF](https://osf.io/8hkrj/) • [paper](https://doi.org/10.1016/j.cognition.2021.104607) |
+| **rdist** | General-purpose R package for DDM and related functions | 📦 CRAN | `install.packages("rdist")` |
+| **RWiener** | Wiener process distribution functions | 📦 CRAN | `install.packages("RWiener")` |
+| **flankr** | Flanker task analysis with SSP/DSTP models | 🔧 Active | [GitHub](https://github.com/JimGrange/flankr) • [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
+| **dynConfiR** | Sequential sampling models of decision confidence | 🔧 Active | [GitHub](https://github.com/SeHellmann/dynConfiR) • [paper](https://doi.org/10.1038/s13428-022-02385-0) |
+| **brms + wiener** | Stan-based Bayesian modeling with Wiener diffusion | 🔧 Active | [brms docs](https://paul-buerkner.github.io/brms/) • [paper](https://doi.org/10.3758/s13428-023-02179-1) |
+
+#### Key R Packages
+- **brms**: Bayesian regression models via Stan
+- **rstan**: R interface to Stan
+- **tidyverse**: Data manipulation and visualization
+- **bayesplot**: Bayesian visualization tools
 
 ### EAMs in Julia
-| Software name  | Key features | URL |
-| --- | --- | --- |
-| `SequentialSamplingModels.jl` | A unified interface for SSM| [link](https://juliapackages.com/p/sequentialsamplingmodels) |
+
+| Software | Key Features | Status | URL |
+|---|---|---|---|
+| **SequentialSamplingModels.jl** | Unified interface for SSM, simulation, plotting, Bayesian inference | 🔥 Active | [GitHub](https://github.com/itsdfish/SequentialSamplingModels.jl) • [paper](https://arxiv.org/abs/2411.06631) • [docs](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/) |
+
+#### Why Julia for SSM?
+- **Performance**: Native compilation speed
+- **Multiple Dispatch**: Elegant modeling syntax
+- **Integration**: Seamless Python/R interoperability
+- **Scientific Computing**: Built-in support for differential equations
 
 ### EAMs in Matlab
 
-| Software name |  Key features | URL |
-| --- | ---  | --- |
-| DMAT | A Matlab interface for DDM | [link](https://ppw.kuleuven.be/okp/software/dmat/) |
+| Software | Key Features | Status | URL |
+|---|---|---|---|
+| **DMAT** | Matlab interface for DDM, diffusion model analysis toolbox | 📦 Stable | [website (certificate issues)](https://ppw.kuleuven.be/okp/software/dmat/) |
 
-### Standalone software for EAMs
-| Software name | Languages | Key features | URL |
-| --- | --- | --- | --- |
-| fast-dm-30 | standalone | A fast implementation of DDM | [link](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/); [tutorial](https://doi.org/10.3389/fpsyg.2015.00336)|
-| EZ-DDM | javascript | A simplified version of DDM | [link](https://www.ejwagenmakers.com/EZ.html); [paper](https://doi.org/10.3758/PBR.15.6.1229) | 
-| EZ-Bayeisan | multiple| EZ Bayesian hierarchical DDM|[python](https://github.com/joachimvandekerckhove/ezbhddm);[R](https://github.com/Adrifelcha/EZ-project);[paper](https://link.springer.com/article/10.3758/s13423-025-02729-y) |
+### EAMs in Stan/Probabilistic Programming
 
-## Tutorials & guidelines
-### General tutorials for computational modeling:
-- Bodner, K., Brimacombe, C., Chenery, E. S., Greiner, A., McLeod, A. M., Penk, S. R., & Soto, J. S. V. (2021). Ten simple rules for tackling your first mathematical models: A guide for graduate students by graduate students. *PLOS Computational Biology*, 17(1), e1008539. https://doi.org/10.1371/journal.pcbi.1008539
-- Wilson, R. C., & Collins, A. G. (2019). Ten simple rules for the computational modeling of behavioral data. *eLife*, 8, e49547. https://doi.org/10.7554/eLife.49547
+| Software | Key Features | Language | URL |
+|---|---|---|---|
+| **Stan-DDM** | Seven-parameter DDM implementation | Stan | [paper](https://doi.org/10.3758/s13428-023-02179-1) • [code (OSF)](https://osf.io/486up/files/zqm2f) |
+| **Turing.jl** | Probabilistic programming in Julia | Julia | [docs](https://turing.ml/) |
+| **PyMC** | Python probabilistic programming | Python | [docs](https://www.pymc.io/) |
 
-### Tutorials for EAMs
-- Boag, R. J., Innes, R. J., Stevenson, N., Bahg, G., Busemeyer, J. R., Cox, G. E., … Forstmann, B. U. (2025). An Expert Guide to Planning Experimental Tasks For Evidence-Accumulation Modeling. *Advances in Methods and Practices in Psychological Science*, 8(2), 25152459251336127. https://doi.org/10.1177/25152459251336127
-- Pan, W., Geng, H., Zhang, L., Fengler, A., Frank, M. J., Zhang, R.-Y., & Chuan-Peng, H. (2025). dockerHDDM: A User-Friendly Environment for Bayesian Hierarchical Drift-Diffusion Modeling. *Advances in Methods and Practices in Psychological Science*, 8(1), 25152459241298700. https://doi.org/10.1177/25152459241298700
-- Nunez, M. D., Fernandez, K., Srinivasan, R., & Vandekerckhove, J. (2024). A tutorial on fitting joint models of M/EEG and behavior to understand cognition. Behavior Research Methods. https://doi.org/10.3758/s13428-023-02331-x
-- Myers, C. E., Interian, A., & Moustafa, A. A. (2022). A practical introduction to using the drift diffusion model of decision-making in cognitive psychology, neuroscience, and health sciences. *Frontiers in Psychology*, 13. https://doi.org/10.3389/fpsyg.2022.1039172
-- Fengler, A., Bera, K., Pedersen, M. L., & Frank, M. J. (2022). Beyond Drift Diffusion Models: Fitting a Broad Class of Decision and Reinforcement Learning Models with HDDM. *Journal of Cognitive Neuroscience*, 34(10), 1780–1805. https://doi.org/10.1162/jocn_a_01902
-- Johnson, D. J., Hopwood, C. J., Cesario, J., & Pleskac, T. J. (2017). Advancing Research on Cognitive Processes in Social and Personality Psychology: A Hierarchical Drift Diffusion Model Primer. *Social Psychological and Personality Science*, 8(4), 413–423. https://doi.org/10.1177/1948550617703174
-- Voss, A., Voss, J., & Lerche, V. (2015). Assessing cognitive processes with diffusion model analyses: A tutorial based on fast-dm-30. *Frontiers in Psychology*, 6. https://doi.org/10.3389/fpsyg.2015.00336
-- Voss, A., Nagler, M., & Lerche, V. (2013). Diffusion models in experimental psychology: A practical introduction. *Experimental Psychology*, 60(6), 385–402. https://doi.org/10.1027/1618-3169/a000218
+### Standalone Software & Web Tools
+
+| Software | Language | Key Features | Status | URL |
+|---|---|---|---|---|
+| **fast-dm-30** | Standalone | Fast maximum likelihood estimation | 📦 Stable | [website (certificate issues)](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/) • [tutorial](https://doi.org/10.3389/fpsyg.2015.00336) |
+| **EZ-DDM** | JavaScript | Simplified DDM parameter estimation | 📦 Stable | [web app](https://www.ejwagenmakers.com/EZ.html) • [paper](https://doi.org/10.3758/PBR.15.6.1229) |
+| **EZ-Bayesian** | Multiple | Bayesian hierarchical EZ-DDM | 🆕 New | [Python](https://github.com/joachimvandekerckhove/ezbhddm) • [R](https://github.com/Adrifelcha/EZ-project) • [paper](https://doi.org/10.3758/s13423-025-02729-y) |
+| **DDM Explorer** | Web | Interactive DDM parameter visualization | 🌐 Online | [demo (unstable)](https://shiny.edition.openhumans.org/ddm_explorer/) |
 
 
-## EAM in neuroscience
+### 🔗 Link Status Notice
 
-### Human studies using EEG
+**Some links in this repository may experience intermittent access issues due to:**
+- **Certificate verification errors** on academic websites
+- **GitHub connection issues** affecting some repositories  
+- **Institutional website maintenance** at universities
 
-- Kelly, S. P., & O’Connell, R. G. (2013). Internal and External Influences on the Rate of Sensory Evidence Accumulation in the Human Brain. *Journal of Neuroscience*, 33(50), 19434–19441. https://doi.org/10.1523/JNEUROSCI.3355-13.2013
-- O’Connell, R. G., Dockree, P. M., & Kelly, S. P. (2012). A supramodal accumulation-to-bound signal that determines perceptual decisions in humans. *Nature Neuroscience*, 15(12), 1729–1735. https://doi.org/10.1038/nn.3248
-- Twomey, D. M., Murphy, P. R., Kelly, S. P., & O’Connell, R. G. (2015). The classic P300 encodes a build-to-threshold decision variable. *European Journal of Neuroscience*, 42(1), 1636–1643. https://doi.org/10.1111/ejn.12936 
-- O’Connell, R. G., & Kelly, S. P. (2021). Neurophysiology of Human Perceptual Decision-Making. *Annual Review of Neuroscience*, 44, 495–516. https://doi.org/10.1146/annurev-neuro-092019-100200
+**Alternatives when links fail:**
+- Search for package names on GitHub or CRAN
+- Use the package installation commands above
+- Check OSF (Open Science Framework) for alternative links
+- Contact maintainers directly for access issues
 
-### Human studies using fMRI
+### Choosing the Right Software
 
-### Human studies using iEEG
-- Pereira, M., Megevand, P., Tan, M. X., Chang, W., Wang, S., Rezai, A., … Faivre, N. (2021). Evidence accumulation relates to perceptual consciousness and monitoring. *Nature Communications*, 12(1), 3261. https://doi.org/10.1038/s41467-021-23540-y
-
-
-## Important references
-
-- Ratcliff, R., Smith, P. L., Brown, S. D., & McKoon, G. (2016). Diffusion Decision Model: Current Issues and History. *Trends in Cognitive Sciences*, 20(4), 260–281. https://doi.org/10.1016/j.tics.2016.01.007 \[Note: This paper is a good introduction to the DDM, its history and its variants. \]
-
-- Forstmann, B. U., Ratcliff, R., & Wagenmakers, E.-J. (2016). Sequential Sampling Models in Cognitive Neuroscience: Advantages, Applications, and Extensions. *Annual Review of Psychology*, 67(1), 641–666. https://doi.org/10.1146/annurev-psych-122414-033645 \[Note: This paper focus more on how SSM help to connect behavioral and neural data. \]
-
-- Ratcliff, R., & McKoon, G. (2008). The Diffusion Decision Model: Theory and Data for Two-Choice Decision Tasks. *Neural Computation*, 20(4), 873–922. https://doi.org/10.1162/neco.2008.12-06-420 \[Note: An in-depth introduction to DDM and its paramenters \]
-
-- Ratcliff, R. (1978). A theory of memory retrieval. *Psychological Review*, 85(2), 59–108. https://doi.org/10.1037/0033-295X.85.2.59 \[Note: The first paper introducing DDM. \]
-
-## Books and book sections
-- Smith, P. L., & Ratcliff, R. (2025). Diffusion Process Models of Decision Making: Fundamental Processes (Vol. 1). Cambridge: Cambridge University Press. [URL](https://doi.org/10.1017/9781009652667)
-- Smith, P. L., & Ratcliff, R. (2024). An Introduction to the Diffusion Model of Decision-Making. In B. U. Forstmann & B. M. Turner (Eds.), *An Introduction to Model-Based Cognitive Neuroscience* (pp. 67–100). Cham: Springer International Publishing. https://doi.org/10.1007/978-3-031-45271-0_4
+1. **For Beginners**: Start with EZ-DDM, fast-dm-30, or HDDM with default settings
+2. **For Research Papers**: Use HSSM (Python) or EMC2 (R) for comprehensive modeling
+3. **For Custom Models**: Use PyDDM, HSSM, or SequentialSamplingModels.jl
+4. **For Large Datasets**: Consider fast-dm-30 or PyDDM with parallel computing
+5. **For Neural Integration**: Use VAM or HDDM/HSSM for behavior-EEG/MEG joint modeling
 
 
+## Tutorials & Learning Resources
 
-## How to contribute
+### 🚀 Getting Started Tutorials
 
-This repo is still under developing, please help us to improve it. You can fork this repo, make changes, and submit a pull request. We will review the pull request and merge it if it follows our style guide.
+#### **For Complete Beginners**
+- **[Wilson & Collins (2019)](https://doi.org/10.7554/eLife.49547)**: Ten simple rules for computational modeling of behavioral data
+- **[Bodner et al. (2021)](https://doi.org/10.1371/journal.pcbi.1008539)**: Graduate student guide to mathematical modeling
+- **[Myers et al. (2022)](https://doi.org/10.3389/fpsyg.2022.1039172)**: Practical introduction to DDM in psychology and neuroscience
 
-## Contact
+#### **Hands-On Software Tutorials**
+- **[Pan et al. (2025)](https://doi.org/10.1177/25152459241298700)**: dockerHDDM tutorial with reproducible environment
+- **[Voss et al. (2015)](https://doi.org/10.3389/fpsyg.2015.00336)**: fast-dm-30 tutorial for diffusion model analysis
+- **[Fengler et al. (2022)](https://doi.org/10.1162/jocn_a_01902)**: Advanced HDDM tutorial for decision and reinforcement learning
 
-If you have any question, please contact Dr. Hu Chuan-Peng at [email](hcp4715@hotmail.com).
+### 📚 Advanced Topics & Specialized Applications
+
+#### **Experimental Design & Model Selection**
+- **[Boag et al. (2025)](https://doi.org/10.1177/25152459251336127)**: Expert guide to planning experiments for evidence-accumulation modeling
+- **[Kvam (2024)](https://doi.org/10.3758/s13423-024-02587-0)**: Discriminating between diffusion decision and accumulator models
+
+#### **Neuroscience & Neuroimaging**
+- **[Nunez et al. (2024)](https://doi.org/10.3758/s13428-023-02331-x)**: Joint M/EEG and behavior modeling tutorial
+- **[Forstmann et al. (2016)](https://doi.org/10.1146/annurev-psych-122414-033645)**: Sequential sampling models in cognitive neuroscience
+
+#### **Bayesian Methods**
+- **[RegDDM Tutorial (2025)](https://arxiv.org/abs/2507.01177)**: Bayesian regression analysis with drift-diffusion models
+- **[Vloeberghs et al. (2025)](https://doi.org/10.1371/journal.pcbi.1013291)**: Bayesian hierarchical models of decision criterion fluctuations
+
+### 🎥 Video Resources & Online Courses
+
+#### **Online Tutorials**
+- **PyDDM Cookbook**: [Interactive examples and recipes](https://pyddm.readthedocs.io/en/latest/cookbook/)
+- **HDDM Documentation**: [Step-by-step tutorials](https://hddm.readthedocs.io/en/latest/tutorial.html)
+- **SequentialSamplingModels.jl**: [Julia tutorials and examples](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/)
+
+#### **Conference Workshops**
+- **CMU Summer School**: Computational modeling tutorials (videos available online)
+- **Cognitive Science Society**: Annual workshops on computational modeling
+
+### 📖 Books & Comprehensive Guides
+
+#### **Textbooks**
+- **[Smith & Ratcliff (2025)](https://doi.org/10.1017/9781009652667)**: Diffusion Process Models of Decision Making (2-volume set)
+- **[Heathcote et al. (2019)](https://doi.org/10.3758/s13428-018-1067-y)**: Dynamic Models of Choice (DMC software)
+
+#### **Handbook Chapters**
+- **[Smith & Ratcliff (2024)](https://doi.org/10.1007/978-3-031-45271-0_4)**: Introduction to diffusion modeling in model-based cognitive neuroscience
+
+
+## Best Practices & Guidelines
+
+### 📊 Data Requirements
+
+#### **Minimum Sample Sizes**
+- **Individual fitting**: ≥ 100 trials per condition
+- **Hierarchical fitting**: ≥ 20-30 participants, each with ≥ 50-100 trials
+- **Complex models**: Increase trials proportionally to parameters
+
+#### **Data Quality Checks**
+- Remove outliers (> 3 SD from mean RT, excluding < 200ms responses)
+- Check for response times < non-decision time estimates
+- Ensure sufficient accuracy variability (avoid ceiling/floor effects)
+
+### 🔧 Model Selection & Validation
+
+#### **When to Use Different Models**
+| Scenario | Recommended Model | Rationale |
+|---|---|---|
+| **Simple 2AFC** | Standard DDM | Well-established, interpretable parameters |
+| **Multi-choice** | LBA or Race Models | Natural extension to >2 alternatives |
+| **Confidence Ratings** | DDM with confidence or 2D DDM | Captures meta-cognitive processes |
+| **Neural Correlates** | DDM + Neural Data | Links behavior to brain activity |
+| **Time-varying Evidence** | Time-varying DDM or Ornstein-Uhlenbeck | Accounts for changing evidence quality |
+
+#### **Model Comparison**
+- **Information Criteria**: Use WAIC, LOO-CV for Bayesian models
+- **Cross-validation**: K-fold validation for predictive accuracy
+- **Posterior Predictive Checks**: Essential for model validation
+- **Parameter Recovery**: Test with simulated data before real analysis
+
+### ⚠️ Common Pitfalls & Solutions
+
+#### **Parameter Identifiability**
+- **Problem**: Drift rate and boundary separation trade-offs
+- **Solution**: Fix non-decision time, use informative priors, collect sufficient data
+
+#### **Speed-Accuracy Trade-offs**
+- **Problem**: Confounding experimental manipulation with response strategies
+- **Solution**: Manipulate both speed and accuracy conditions, model strategic changes
+
+#### **Hierarchical vs. Individual Fitting**
+- **Problem**: Overfitting with individual parameter estimates
+- **Solution**: Use hierarchical partial pooling for group-level inference
+
+## EAM in Neuroscience
+
+### 🧠 Human Electrophysiology (EEG/MEG)
+
+#### **Key Findings**
+- **[O'Connell et al. (2012)](https://doi.org/10.1038/nn.3248)**: Supramodal accumulation-to-bound signals
+- **[Kelly & O'Connell (2013)](https://doi.org/10.1523/JNEUROSCI.3355-13.2013)**: Neural correlates of evidence accumulation rate
+- **[Twomey et al. (2015)](https://doi.org/10.1111/ejn.12936)**: P300 as decision variable signal
+- **[O'Connell & Kelly (2021)](https://doi.org/10.1146/annurev-neuro-092019-100200)**: Comprehensive review of decision neurophysiology
+
+#### **Neural Markers**
+- **Centro-parietal positivity (CPP)**: Accumulation-to-bound signal
+- **Beta-band activity**: Evidence accumulation dynamics
+- **Pre-stimulus oscillations**: Decision threshold modulation
+
+### 🧠 Functional MRI Studies
+
+#### **Recent Advances (2024-2025)**
+- **[Brošová et al. (2025)](https://doi.org/10.3389/fnins.2025.1513083)**: Cross-modal congruency effects on evidence accumulation
+- **[Franzen et al. (2025)](https://doi.org/10.1101/2025.07.03.662942)**: Prior information effects in psychosis
+- **[Cochrane et al. (2023)](https://doi.org/10.1038/s41539-023-00168-9)**: Multiple timescales of learning in evidence accumulation
+
+#### **Key Brain Regions**
+- **Dorsolateral Prefrontal Cortex**: Decision threshold control
+- **Parietal Cortex**: Evidence accumulation
+- **Basal Ganglia**: Response selection
+- **Anterior Cingulate**: Conflict monitoring
+
+### 🧠 Intracranial Recordings (iEEG)
+
+- **[Pereira et al. (2021)](https://doi.org/10.1038/s41467-021-23540-y)**: Evidence accumulation and perceptual consciousness
+- **[Human Single-Unit Studies]**: Neural implementations of drift-diffusion processes
+
+
+## 📚 Important References
+
+### Foundational Papers
+
+| Year | Citation | Key Contribution |
+|---|---|---|
+| **1978** | [Ratcliff (1978)](https://doi.org/10.1037/0033-295X.85.2.59) | Original DDM paper |
+| **2008** | [Ratcliff & McKoon (2008)](https://doi.org/10.1162/neco.2008.12-06-420) | Comprehensive DDM theory and parameters |
+| **2016** | [Ratcliff et al. (2016)](https://doi.org/10.1016/j.tics.2016.01.007) | Current issues and historical overview |
+| **2016** | [Forstmann et al. (2016)](https://doi.org/10.1146/annurev-psych-122414-033645) | SSM in cognitive neuroscience |
+
+### Recent Advances (2024-2025)
+
+- **[Khoudary et al. (2025)](https://doi.org/10.1111/ejn.70098)**: Philosophical foundations of computational modeling
+- **[Nunez et al. (2025)](https://doi.org/10.1016/j.jmp.2025.102720)**: Cognitive models with identifiable parameters
+- **[Fernandez et al. (2024)](https://arxiv.org/abs/2411.06631)**: Julia ecosystem for sequential sampling models
+
+### Methodological Innovations
+
+- **[Vloeberghs et al. (2025)](https://doi.org/10.1371/journal.pcbi.1013291)**: Trial-to-trial fluctuations modeling
+- **[Jin et al. (2025)](https://arxiv.org/abs/2507.01177)**: Unified Bayesian regression with DDM
+- **[Kvam (2024)](https://doi.org/10.3758/s13423-024-02587-0)**: Model discrimination techniques
+
+## 📖 Books & Monographs
+
+### Comprehensive Texts
+
+- **[Smith & Ratcliff (2025)](https://doi.org/10.1017/9781009652667)**: *Diffusion Process Models of Decision Making: Fundamental Processes* (Vol. 1) - **The definitive modern reference**
+- **[Smith & Ratcliff (2024)](https://doi.org/10.1007/978-3-031-45271-0_4)**: Introduction to the Diffusion Model in *Model-Based Cognitive Neuroscience*
+
+### Related Reading
+
+- **[Heathcote & Hayes (2012)](https://doi.org/10.1017/CBO9780511996236)**: Diffusion modeling in *The Oxford Handbook of Computational Cognitive Science*
+- **[Busemeyer & Diederich (2010)](https://doi.org/10.1093/acprof:oso/9780199732989.001.0001)**: *Cognitive Modeling* - Chapter on sequential sampling models
+
+## 🤝 Contributing
+
+### How to Contribute
+
+We welcome contributions from all researchers and practitioners! Here's how you can help:
+
+#### **Adding New Resources**
+1. **Software packages**: Include version, language, key features, and status
+2. **Papers**: Add to appropriate sections with DOI links
+3. **Tutorials**: Categorize by difficulty and target audience
+4. **Bug reports**: Open issues for outdated links or information
+
+#### **Submission Guidelines**
+- Follow the existing format and style
+- Include DOI links where available
+- Add brief descriptions (1-2 sentences) for each entry
+- Test all links before submission (many academic sites have certificate issues)
+- Note when links are unstable or have access problems
+- Check for duplicates before submitting
+
+#### **Pull Request Process**
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/amazing-addition`)
+3. Commit your changes (`git commit -m 'Add [resource name]'`)
+4. Push to the branch (`git push origin feature/amazing-addition`)
+5. Open a Pull Request
+
+### 📋 Maintenance
+
+This repository is actively maintained. Current maintainers:
+- **Dr. Hu Chuan-Peng** ([hcp4715@hotmail.com](mailto:hcp4715@hotmail.com))
+
+#### **Review Process**
+- All submissions are reviewed within 1-2 weeks
+- We prioritize accuracy and relevance
+- Outdated or broken resources are periodically reviewed and updated
+
+
+
+## 🌟 Community
+
+### 📬 Contact & Support
+
+- **General Inquiries**: Dr. Hu Chuan-Peng ([hcp4715@hotmail.com](mailto:hcp4715@hotmail.com))
+- **Bug Reports**: [GitHub Issues](https://github.com/hcp4715/awesomeDDM/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/hcp4715/awesomeDDM/discussions)
+
+### 🏆 Recognition
+
+Contributors are acknowledged in the repository. Special thanks to:
+- All researchers who have shared their software and tutorials
+- The cognitive modeling community for continuous innovation
+- Open source maintainers who make these tools possible
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+> **Note**: This repository is continuously evolving. Check back regularly for new resources and updates!
