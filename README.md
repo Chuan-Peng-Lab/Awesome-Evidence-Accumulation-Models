@@ -52,12 +52,12 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | Software | Key Features | Status | URL |
 |---|---|---|---|
 | **HDDM** | Hierarchical Bayesian parameter estimation of DDM, MCMC sampling | 🔧 Active | [docs](https://hddm.readthedocs.io/en/latest/) • [paper](https://www.frontiersin.org/articles/10.3389/fninf.2013.00014/full) |
+| **dockerHDDM** | Dockerized HDDM environment for reproducible research | 🔧 Maintained | [Docker Hub](https://hub.docker.com/r/hcp4715/hddm) • [tutorial](https://doi.org/10.1177/25152459241298700) |
 | **HSSM** | Enhanced HDDM with more EAMs, GPU support, modern backend | 🔧 Active | [docs](https://lnccbrown.github.io/HSSM/) • [GitHub](https://github.com/lnccbrown/HSSM) |
 | **PyDDM** | Generalized DDM simulator, custom models, parallel computing | 🔧 Active | [docs](https://pyddm.readthedocs.io/) • [paper](https://doi.org/10.7554/eLife.56938) |
 | **PyBEAM** | Bayesian evidence accumulation modeling for binary choices | 🔧 Active | [GitHub](https://github.com/murrowma/pybeam) • [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 | **VAM** | Visual accumulator model with CNN integration for image-based decisions | 🔧 Active | [paper](https://doi.org/10.7554/eLife.98351) • [GitHub (unstable)](https://github.com/pauljaffe/vam) |
 | **RegDDM** | Bayesian regression analysis integrating DDM parameters with covariates | 🆕 New | [paper](https://arxiv.org/abs/2507.01177) |
-| **dockerHDDM** | Dockerized HDDM environment for reproducible research | 🔧 Maintained | [Docker Hub](https://hub.docker.com/r/hcp4715/hddm) • [tutorial](https://doi.org/10.1177/25152459241298700) |
 | **EZ-CDM** | Circular diffusion model for angular decision-making | 🆕 New | [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7) |
 | **FlexDDM** | Flexible decision-diffusion modeling framework | 🆕 New | [paper (sometimes unavailable)](https://escholarship.org/uc/item/4q57r2x0) ; [code](https://github.com/joyfan00/FlexDDM)|
 
@@ -89,7 +89,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 | Software | Key Features | Status | URL |
 |---|---|---|---|
-| **SequentialSamplingModels.jl** | Unified interface for SSM, simulation, plotting, Bayesian inference | 🔥 Active | [GitHub](https://github.com/itsdfish/SequentialSamplingModels.jl) • [paper](https://arxiv.org/abs/2411.06631) • [docs](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/) |
+| **SequentialSamplingModels.jl** | Unified interface for SSM, simulation, plotting, Bayesian inference | 🔧 Active | [GitHub](https://github.com/itsdfish/SequentialSamplingModels.jl) • [paper](https://arxiv.org/abs/2411.06631) • [docs](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/) |
 
 #### Why Julia for SSM?
 - **Performance**: Native compilation speed
@@ -190,6 +190,8 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 #### **Handbook Chapters**
 - **[Smith & Ratcliff (2024)](https://doi.org/10.1007/978-3-031-45271-0_4)**: Introduction to diffusion modeling in model-based cognitive neuroscience
+- **[Heathcote & Hayes (2012)](https://doi.org/10.1017/CBO9780511996236)**: Diffusion modeling in *The Oxford Handbook of Computational Cognitive Science*
+- **[Busemeyer & Diederich (2010)](https://doi.org/10.1093/acprof:oso/9780199732989.001.0001)**: *Cognitive Modeling* - Chapter on sequential sampling models
 
 
 ## Best Practices & Guidelines
@@ -259,12 +261,6 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 - **[Franzen et al. (2025)](https://doi.org/10.1101/2025.07.03.662942)**: Prior information effects in psychosis
 - **[Cochrane et al. (2023)](https://doi.org/10.1038/s41539-023-00168-9)**: Multiple timescales of learning in evidence accumulation
 
-#### **Key Brain Regions**
-- **Dorsolateral Prefrontal Cortex**: Decision threshold control
-- **Parietal Cortex**: Evidence accumulation
-- **Basal Ganglia**: Response selection
-- **Anterior Cingulate**: Conflict monitoring
-
 ### 🧠 Intracranial Recordings (iEEG)
 
 - **[Pereira et al. (2021)](https://doi.org/10.1038/s41467-021-23540-y)**: Evidence accumulation and perceptual consciousness
@@ -294,17 +290,6 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 - **[Jin et al. (2025)](https://arxiv.org/abs/2507.01177)**: Unified Bayesian regression with DDM
 - **[Kvam (2024)](https://doi.org/10.3758/s13423-024-02587-0)**: Model discrimination techniques
 
-## 📖 Books & Monographs
-
-### Comprehensive Texts
-
-- **[Smith & Ratcliff (2025)](https://doi.org/10.1017/9781009652667)**: *Diffusion Process Models of Decision Making: Fundamental Processes* (Vol. 1) - **The definitive modern reference**
-- **[Smith & Ratcliff (2024)](https://doi.org/10.1007/978-3-031-45271-0_4)**: Introduction to the Diffusion Model in *Model-Based Cognitive Neuroscience*
-
-### Related Reading
-
-- **[Heathcote & Hayes (2012)](https://doi.org/10.1017/CBO9780511996236)**: Diffusion modeling in *The Oxford Handbook of Computational Cognitive Science*
-- **[Busemeyer & Diederich (2010)](https://doi.org/10.1093/acprof:oso/9780199732989.001.0001)**: *Cognitive Modeling* - Chapter on sequential sampling models
 
 ## 🤝 Contributing
 
