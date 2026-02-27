@@ -73,7 +73,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | Software | Key Features | Status | URL |
 |---|---|---|---|
 | **EMC2** | Bayesian hierarchical cognitive modeling, multiple SSMs (includes LBA, RDM, DDM) | 🔧  Active | [GitHub](https://github.com/awellis/EMC2) • [paper](https://doi.org/10.3758/s13428-025-02869-y) |
-| **eam** | simulation-based evidence accumulation models (DDM, LCA, LBA, RDM, LFM) | 🔧  Active |[GitHub](hhttps://github.com/y-guang/eam) |
+| **eam** | simulation-based evidence accumulation models (DDM, LCA, LBA, RDM, LFM) | 🔧  Active | [GitHub](hhttps://github.com/y-guang/eam) • [paper](https://osf.io/preprints/psyarxiv/dg7c2_v1) |
 | **DMCfun** | Diffusion Model of Conflict for conflict tasks | 🔧 Active | [OSF](https://osf.io/8hkrj/) • [paper](https://doi.org/10.1016/j.cognition.2021.104607) |
 | **rdist** | General-purpose R package for DDM and related functions | 📦 CRAN | `install.packages("rdist")` |
 | **RWiener** | Wiener process distribution functions | 📦 CRAN | `install.packages("RWiener")` |
