@@ -57,10 +57,10 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **PyDDM** | Generalized DDM simulator, custom models, parallel computing | 🔧 Active | [docs](https://pyddm.readthedocs.io/) • [paper](https://doi.org/10.7554/eLife.56938) |
 | **PyBEAM** | Bayesian evidence accumulation modeling for binary choices (supports multiple accumulator models including LBA) | 🔧 Active | [GitHub](https://github.com/murrowma/pybeam) • [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 | **psireact** | Hierarchical Bayesian modeling of response time data, multiple accumulator models including LBA | 🔧 Development | [GitHub](https://github.com/mortonne/psireact) |
-| **VAM** | Visual accumulator model with CNN integration for image-based decisions | 🔧 Active | [paper](https://doi.org/10.7554/eLife.98351) • [GitHub (connection issues)](https://github.com/pauljaffe/vam) |
+| **VAM** | Visual accumulator model with CNN integration for image-based decisions | 🔧 Active | [paper](https://doi.org/10.7554/eLife.98351) • [GitHub](https://github.com/pauljaffe/vam) |
 | **RegDDM** | Bayesian regression analysis integrating DDM parameters with covariates | 🆕 New | [paper](https://arxiv.org/abs/2507.01177) |
 | **EZ-CDM** | Circular diffusion model for angular decision-making | 🆕 New | [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7) |
-| **FlexDDM** | Flexible decision-diffusion modeling framework | 🆕 New | [paper (sometimes unavailable)](https://escholarship.org/uc/item/4q57r2x0) ; [code](https://github.com/joyfan00/FlexDDM)|
+| **FlexDDM** | Flexible decision-diffusion modeling framework | 🆕 New | [paper](https://escholarship.org/uc/item/4q57r2x0) ; [code](https://github.com/joyfan00/FlexDDM)|
 
 #### Key Python Packages
 - **NumPy/SciPy**: Core numerical computing
@@ -82,7 +82,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **glba** | General Linear Ballistic Accumulator models with covariates | 📦 CRAN | `install.packages("glba")` |
 | **hBayesDM** | Hierarchical Bayesian modeling with DDM, LBA and other accumulator models, Stan backend | 🔧 Active | [docs](https://ccs-lab.github.io/hBayesDM/reference/choiceRT_lba.html) |
 | **flankr** | Flanker task analysis with SSP/DSTP models | 🔧 Active | [GitHub](https://github.com/JimGrange/flankr) • [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
-| **dynConfiR** | Sequential sampling models of decision confidence | 🔧 Active | [GitHub (certificate issues)](https://github.com/SeHellmann/dynConfiR) • [paper](https://doi.org/10.1038/s13428-022-02385-0) |
+| **dynConfiR** | Sequential sampling models of decision confidence | 🔧 Active | [GitHub](https://github.com/SeHellmann/dynConfiR) • [paper](https://doi.org/10.1038/s13428-022-02385-0) |
 | **brms + wiener** | Stan-based Bayesian modeling with Wiener diffusion | 🔧 Active | [brms docs](https://paul-buerkner.github.io/brms/) • [paper](https://doi.org/10.3758/s13428-023-02179-1) |
 
 #### Key R Packages
@@ -95,7 +95,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 | Software | Key Features | Status | URL |
 |---|---|---|---|
-| **SequentialSamplingModels.jl** | Unified interface for SSM (includes LBA, DDM, race models), simulation, plotting, Bayesian inference | 🔧 Active | [GitHub (certificate issues)](https://github.com/itsdfish/SequentialSamplingModels.jl) • [paper](https://arxiv.org/abs/2411.06631) • [docs](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/) |
+| **SequentialSamplingModels.jl** | Unified interface for SSM (includes LBA, DDM, race models), simulation, plotting, Bayesian inference | 🔧 Active | [GitHub](https://github.com/itsdfish/SequentialSamplingModels.jl) • [paper](https://arxiv.org/abs/2411.06631) • [docs](https://itsdfish.github.io/SequentialSamplingModels.jl/dev/) |
 
 #### Why Julia for SSM?
 - **Performance**: Native compilation speed
@@ -107,24 +107,24 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 
 | Software | Key Features | Status | URL |
 |---|---|---|---|
-| **DMAT** | Matlab interface for DDM, diffusion model analysis toolbox | 📦 Stable | [website (certificate issues)](https://ppw.kuleuven.be/okp/software/dmat/) |
+| **DMAT** | Matlab interface for DDM, diffusion model analysis toolbox | 📦 Stable | [website](https://ppw.kuleuven.be/okp/software/dmat/) |
 
 ### EAMs in Stan/Probabilistic Programming
 
 | Software | Key Features | Language | URL |
 |---|---|---|---|
 | **Stan-DDM** | Seven-parameter DDM implementation | Stan | [paper](https://doi.org/10.3758/s13428-023-02179-1) • [code (OSF)](https://osf.io/486up/files/zqm2f) |
-| **Turing.jl** | Probabilistic programming in Julia | Julia | [docs (certificate issues)](https://turing.ml/) |
-| **PyMC** | Python probabilistic programming | Python | [docs (certificate issues)](https://www.pymc.io/) |
+| **Turing.jl** | Probabilistic programming in Julia | Julia | [docs](https://turing.ml/) |
+| **PyMC** | Python probabilistic programming | Python | [docs](https://www.pymc.io/) |
 
 ### Standalone Software & Web Tools
 
 | Software | Language | Key Features | Status | URL |
 |---|---|---|---|---|
-| **fast-dm-30** | Standalone | Fast maximum likelihood estimation | 📦 Stable | [website (certificate issues)](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/) • [tutorial](https://doi.org/10.3389/fpsyg.2015.00336) |
+| **fast-dm-30** | Standalone | Fast maximum likelihood estimation | 📦 Stable | [website](https://www.psychologie.uni-heidelberg.de/projekt/fast-dm/) • [tutorial](https://doi.org/10.3389/fpsyg.2015.00336) |
 | **EZ-DDM** | JavaScript | Simplified DDM parameter estimation | 📦 Stable | [web app](https://www.ejwagenmakers.com/EZ.html) • [paper](https://doi.org/10.3758/PBR.15.6.1229) |
-| **EZ-Bayesian** | Multiple | Bayesian hierarchical EZ-DDM | 🆕 New | [Python (certificate issues)](https://github.com/joachimvandekerckhove/ezbhddm) • [R (certificate issues)](https://github.com/Adrifelcha/EZ-project) • [paper](https://doi.org/10.3758/s13423-025-02729-y) |
-| **DDM Explorer** | Web | Interactive DDM parameter visualization | 🌐 Online | [demo (unstable)](https://shiny.edition.openhumans.org/ddm_explorer/) |
+| **EZ-Bayesian** | Multiple | Bayesian hierarchical EZ-DDM | 🆕 New | [Python](https://github.com/joachimvandekerckhove/ezbhddm) • [R](https://github.com/Adrifelcha/EZ-project) • [paper](https://doi.org/10.3758/s13423-025-02729-y) |
+| **DDM Explorer** | Web | Interactive DDM parameter visualization | 🌐 Online | [demo](https://shiny.edition.openhumans.org/ddm_explorer/) |
 
 
 ### 🔗 Link Status Notice
