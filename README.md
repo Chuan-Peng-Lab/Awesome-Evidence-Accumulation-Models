@@ -62,6 +62,8 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **RegDDM** | Bayesian regression analysis integrating DDM parameters with covariates | 🆕 New | [paper](https://arxiv.org/abs/2507.01177) |
 | **EZ-CDM** | Circular diffusion model for angular decision-making | 🆕 New | [paper](https://link.springer.com/article/10.3758/s13423-024-02483-7) |
 | **FlexDDM** | Flexible decision-diffusion modeling framework | 🆕 New | [paper](https://escholarship.org/uc/item/4q57r2x0) ; [code](https://github.com/joyfan00/FlexDDM)|
+| **JEAM** | evidence accumulation modeling of continuous judgments. | 🆕 New | [paper](osf.io/5c8w2) ; [code](https://github.com/AmirHoseinHadian/JEAM)|
+
 
 #### Key Python Packages
 - **NumPy/SciPy**: Core numerical computing
