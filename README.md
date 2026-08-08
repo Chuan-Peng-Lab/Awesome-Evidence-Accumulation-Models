@@ -55,6 +55,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **dockerHDDM** | Dockerized HDDM environment for reproducible research | 🔧 Active | [Docker Hub](https://hub.docker.com/r/hcp4715/hddm) • [tutorial](https://doi.org/10.1177/25152459241298700) |
 | **HSSM** | Enhanced HDDM with more EAMs, GPU support, modern backend | 🔧 Active | [docs](https://lnccbrown.github.io/HSSM/) • [GitHub](https://github.com/lnccbrown/HSSM) • [paper](https://www.biorxiv.org/content/10.64898/2026.06.05.730398v1)|
 | **PyDDM** | Generalized DDM simulator, custom models, parallel computing | 🔧 Active | [docs](https://pyddm.readthedocs.io/) • [paper](https://doi.org/10.7554/eLife.56938) |
+| **PyDDMBayes** | Bayesian version of PyDDM | 🆕 New | to-be-open? • [paper](https://openreview.net/pdf?id=M7nQBB1sxG) |
 | **PyBEAM** | Bayesian evidence accumulation modeling for binary choices (supports multiple accumulator models including LBA) | 🔧 Active | [GitHub](https://github.com/murrowma/pybeam) • [paper](https://doi.org/10.3758/s13428-023-02162-w) |
 | **psireact** | Hierarchical Bayesian modeling of response time data, multiple accumulator models including LBA | 🔧 Development | [GitHub](https://github.com/mortonne/psireact) |
 | **VAM** | Visual accumulator model with CNN integration for image-based decisions | 🔧 Active | [paper](https://doi.org/10.7554/eLife.98351) • [GitHub](https://github.com/pauljaffe/vam) |
