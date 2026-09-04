@@ -87,6 +87,7 @@ The ecosystem for evidence accumulation modeling has grown significantly, with m
 | **hBayesDM** | Hierarchical Bayesian modeling with DDM, LBA and other accumulator models, Stan backend | 🔧 Active | [docs](https://ccs-lab.github.io/hBayesDM/reference/choiceRT_lba.html) |
 | **flankr** | Flanker task analysis with SSP/DSTP models | 🔧 Active | [GitHub](https://github.com/JimGrange/flankr) • [paper](https://link.springer.com/article/10.3758/s13428-015-0615-y) |
 | **dynConfiR** | Sequential sampling models of decision confidence | 🔧 Active | [GitHub](https://github.com/SeHellmann/dynConfiR) • [paper](https://doi.org/10.1038/s13428-022-02385-0) |
+| **cogmod** | Models for subjective scales & decision making in R | 🔧 Active | [GitHub](https://github.com/DominiqueMakowski/cogmod) • [preprint](osf.io/5h62c) |
 | **brms + wiener** | Stan-based Bayesian modeling with Wiener diffusion | 🔧 Active | [brms docs](https://paul-buerkner.github.io/brms/) • [paper](https://doi.org/10.3758/s13428-023-02179-1) |
 
 #### Key R Packages
